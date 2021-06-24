@@ -1,0 +1,138 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.img{
+  display: block;
+  margin-top: 100px;
+  margin-left: 6%;
+  padding-right: 75px;
+}
+
+.Log-Form{
+  margin-top: 12%;
+  margin-left: 5%;
+}
+
+.Pass{
+  margin-top: -13%;
+}
+
+.formfield{
+  position: relative;
+  box-sizing: border-box;
+  float: left;
+  margin: auto;
+  padding: 0px;
+  border: 0px;
+  font-size: 1em;
+}
+
+#emailfield{
+  width: 100%;
+  min-width: 250px;
+}
+#passwordfield{
+  width: 100%;
+  min-width: 250px;
+}
+
+.formfield>input, .formfield>label{
+  padding: 0.8em;
+  margin: 2em;
+}
+
+.formfield>input{
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #ccc;
+  width: 150%;
+}
+
+.formfield>label{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  color: #989797;
+  text-align: left;
+  font-family: monospace;
+}
+
+input:focus + label, input:valid + label{
+  color: #989797;
+  font-size: 0.75em;
+  width: auto;
+  height: 1.3em;
+  padding: 0px 0em 0px 0em;
+  margin: 0px;
+  /*outline: 1px solid red; /*for debugigng purposes only*/
+  background: white;
+  transition: 0.2s ease-in-out;
+  top: 0em;
+  left: 2.5em;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.double-column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 2;
+}
+
+.Icon{
+  display: flex;
+  flex-direction: initial;
+  position: relative;
+  bottom: -270%;
+}
+
+.e-btn.e-info, .e-css.e-btn.e-info {
+  background-color: #066ec3;
+  border: none;
+  color: #fff;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  font: small-caption;
+  text-transform: capitalize;
+  font-size: initial;
+  position: relative;
+  left: 150%;
+}
+
+.Bigcolumn {
+  flex: 2 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  left: 12%;
+}
+
+.Smallcolumn {
+  flex: 1 0 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
